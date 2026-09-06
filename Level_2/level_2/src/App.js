@@ -1,16 +1,8 @@
-import Navbar from "./components/navbar/Navbar.js";
-import Hero from "./components/Hero/Hero.js";
-import About from "./components/About/About.js";
-import Services from "./components/Services/Services.js";
+import Landing_page from "./pages/Landing";
 function App() {
 
   return (
-      <>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Services/>
-      </>
+      <Landing_page/>
   );
 }
 

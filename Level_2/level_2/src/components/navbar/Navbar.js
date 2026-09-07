@@ -20,11 +20,11 @@ const Navbar = () => {
           }}
         >
           <Typography
-            sx={{
+            sx={(theme)=>({
               color: "text.secondary",
               fontSize: "24px",
-              fontWeight: 600,
-            }}
+              fontWeight: theme.typography.fontWeightBold,
+            })}
           >
             WebTech Practice
           </Typography>

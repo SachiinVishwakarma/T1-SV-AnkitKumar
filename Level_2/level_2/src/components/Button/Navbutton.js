@@ -3,17 +3,17 @@ const Navbutton = (props) => {
   return (
     <Button
       variant="outlined"
-      sx={{
+      sx={(theme)=>({
         color: "text.secondary",
         borderColor: "secondary.main",
-        fontSize: "typography.fontSize",
-        minWidth: "38px",
-        fontWeight: 400,
+        fontSize: theme.typography.fontSize,
+        minWidth: theme.button.minWidth,
+        fontWeight: theme.typography.fontWeightRegular,
         textTransform: "none",
-        padding: "5px 12px",
-        borderRadius: "8px",
+        padding: theme.button.padding,
+        borderRadius: theme.button.borderRadius,
         ...props.sx,
-      }}
+      })}
     >
       {props.txt}
     </Button>

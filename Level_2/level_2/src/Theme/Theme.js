@@ -29,6 +29,12 @@ const Theme = createTheme({
     fontWeightMedium: 500,
     fontWeightBold: 700,
   },
+
+  button: {
+    padding: '5px 12px',
+    borderRadius: '8px',
+    minWidth: '38px',
+  }
 });
 
 export default Theme;

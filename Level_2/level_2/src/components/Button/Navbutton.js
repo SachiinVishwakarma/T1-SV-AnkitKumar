@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { navbuttoncss } from "./navbuttoncss";
+import { navbuttoncss } from "../../Theme/navbuttonstyle";
 const Navbutton = (props) => {
   return (
     <Button

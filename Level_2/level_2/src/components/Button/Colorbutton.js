@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { colorbuttoncss } from "./colorbuttoncss";
+import { colorbuttoncss } from "../../Theme/colorbuttonstyle";
 const Colorbutton = (props) => {
   return (
     <Button

@@ -6,7 +6,7 @@ const Subheading=(props)=>{
               fontSize: "32px",
               fontWeight: 700,
               color: "#202b33",
-              mb: 1,
+              mb: 5,
               display: "flex",
               justifyContent: "center",
             }}

@@ -52,7 +52,6 @@ const Hero=()=>{
           
           <Grid item xs={20} md={10}>
             <Card
-              elevation={0}
               sx={{
                 border: "1px solid #2bb9ae",
                 borderRadius: "30px",

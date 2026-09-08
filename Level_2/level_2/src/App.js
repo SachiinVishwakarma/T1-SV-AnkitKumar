@@ -1,16 +1,12 @@
-import Navbar from "./components/navbar/Navbar.js";
-import Hero from "./components/Hero/Hero.js";
-import About from "./components/About/About.js";
-import Services from "./components/Services/Services.js";
+import { ThemeProvider } from "@emotion/react";
+import Landing_page from "./pages/Landing";
+import Theme from "./Theme/Theme";
 function App() {
 
   return (
-      <>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Services/>
-      </>
+    <ThemeProvider theme={Theme}>
+      <Landing_page/>
+    </ThemeProvider>
   );
 }
 

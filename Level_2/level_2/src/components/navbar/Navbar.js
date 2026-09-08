@@ -1,52 +1,46 @@
-import {AppBar,Container,Typography,Stack,Toolbar} from "@mui/material"
+import {AppBar,Container,Typography,Stack,Toolbar,} from "@mui/material";
 import Navbutton from "../Button/Navbutton";
 import Colorbutton from "../Button/Colorbutton";
-const Navbar=()=>{return(
+
+const Navbar = () => {
+  return (
     <AppBar
-            position="static"
-            elevation={4}
-            sx={{
-            backgroundColor: "#06286f",
-            }}
+      position="static"
+      elevation={4}
+      sx={{
+        backgroundColor: "primary.main",
+      }}
+    >
+      <Container maxWidth="lg">
+        <Toolbar
+          disableGutters
+          sx={{
+            minHeight: "60px !important",
+            justifyContent: "space-between",
+          }}
         >
-            <Container maxWidth="lg">
-            <Toolbar
-                disableGutters
-                sx={{
-                minHeight: "60px !important",
-                justifyContent: "space-between",
-                }}
-            >
-                
-                <Typography
-                sx={{
-                    color: "white",
-                    fontSize: "24px",
-                    fontWeight: 600,
-                }}
-                >
-                WebTech Practice
-                </Typography>
+          <Typography
+            sx={(theme)=>({
+              color: "text.secondary",
+              fontSize: "24px",
+              fontWeight: theme.typography.fontWeightBold,
+            })}
+          >
+            WebTech Practice
+          </Typography>
 
-                
-                <Stack direction="row" spacing={1.0}>
-                
-                <Navbutton txt="About"/>
+          <Stack direction="row" spacing={1}>
+            <Navbutton txt="Home" />
+            <Navbutton txt="About" />
+            <Navbutton txt="Services" />
+            <Navbutton txt="Theme" />
+            <Navbutton txt="Login" />
+            <Colorbutton txt="Signup" />
+          </Stack>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
+};
 
-                <Navbutton txt="Services"/>
-
-                <Navbutton txt="Theme"/>
-
-                <Navbutton txt="Login"/>
-
-                <Colorbutton txt="Signup"/>
-
-                
-                </Stack>
-            </Toolbar>
-            </Container>
-        </AppBar>
-
-        );
-}
 export default Navbar;

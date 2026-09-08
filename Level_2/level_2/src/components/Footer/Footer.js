@@ -7,7 +7,7 @@ const Footer=()=>{return(
             position="static"
             elevation={4}
             sx={{
-            backgroundColor: "#06286f",
+            backgroundColor: "primary.main",
             mt:"100px",
             }}
         >
@@ -20,7 +20,7 @@ const Footer=()=>{return(
                 }}
             >
                 
-                <Text txt="© 2023 webTech Practice build for learning and growth" sx={{color:"white",mt:"20px"}}/>
+                <Text txt="© 2023 webTech Practice build for learning and growth" sx={{color:"text.secondary",mt:"20px"}}/>
 
                 
                 <Stack direction="row" spacing={1.0}>

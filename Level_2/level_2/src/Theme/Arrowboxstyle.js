@@ -1,12 +1,12 @@
-export const Arrowboxstyle={
+export const Arrowboxstyle=(theme)=>({
             width: "55px",
             height: "55px",
             borderRadius: "15px",
-            backgroundColor: "#4ECDC4",
-            color: "#FBFBFF",
+            backgroundColor: theme.palette.secondary.main,
+            color: theme.palette.text.secondary,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            fontSize: "16px",
-            fontWeight: 700,
-            }
+            fontSize: theme.typography.fontSize,
+            fontWeight: theme.typography.fontWeightBold,
+            })

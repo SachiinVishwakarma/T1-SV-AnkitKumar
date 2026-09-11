@@ -1,21 +1,10 @@
 import { Button } from "@mui/material";
+import { colorbuttoncss } from "../../Theme/colorbuttonstyle";
 const Colorbutton = (props) => {
   return (
     <Button
       variant="contained"
-      sx={(theme)=>({
-        backgroundColor: "secondary.main",
-        color: "text.secondary",
-        fontSize: theme.typography.fontSize,
-        minWidth: theme.button.minWidth,
-        fontWeight: theme.typography.fontWeightRegular,
-        textTransform: "none",
-        padding: theme.button.padding,
-        borderRadius: theme.button.borderRadius,
-        "&:hover": {
-          backgroundColor: "secondary.dark",
-        },
-      })}
+      sx={colorbuttoncss}
     >
       {props.txt}
     </Button>

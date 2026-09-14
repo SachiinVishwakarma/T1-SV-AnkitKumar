@@ -8,10 +8,10 @@ export const Herostyle = (theme) => ({
   },
 
   heading: {
-    fontSize: "36px",
+    fontSize: theme.typography.fontsizelarge,
     fontWeight: theme.typography.fontWeightBold,
     lineHeight: 1.15,
-    color: "text.primary",
+    color: theme.palette.text.primary,
     mt: 10,
     mb: 2,
   },
@@ -26,13 +26,13 @@ export const Herostyle = (theme) => ({
 
   card: {
     border: `1px solid ${theme.palette.secondary.dark}`,
-    borderRadius: "30px",
+    borderRadius: theme.borders.largeborderradius,
     boxShadow: `0px -4px 4px 0px ${theme.palette.primary.main}`,
-    backgroundColor: "background.default",
+    backgroundColor: theme.palette.background.default,
   },
 
   cardContent: {
-    padding: "22px !important",
+    padding: "22px",
   },
 
   cardBox: {
@@ -49,9 +49,9 @@ export const Herostyle = (theme) => ({
   },
 
   cardHeading: {
-    fontSize: "24px",
+    fontSize: theme.typography.fontsizemid,
     fontWeight: theme.typography.fontWeightBold,
-    color: "text.primary",
+    color: theme.palette.text.primary,
     mb: 0.8,
   },
 
@@ -64,11 +64,11 @@ export const Herostyle = (theme) => ({
   },
 
   activeDot: {
-    backgroundColor: "secondary.main",
+    backgroundColor: theme.palette.secondary.main,
   },
 
   navbtn: {
-    color: "text.primary",
+    color: theme.palette.text.primary,
   },
 
 });

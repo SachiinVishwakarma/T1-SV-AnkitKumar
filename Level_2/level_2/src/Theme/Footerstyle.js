@@ -1,14 +1,14 @@
 export const Footerstyle = (theme) => ({
   footer: {
-    backgroundColor: "primary.main",
+    backgroundColor: theme.palette.primary.main,
     mt: "100px",
   },
   toolbar: {
-    minHeight: "166px !important",
+    minHeight: "166px",
     justifyContent: "space-between",
   },
   text: {
-    color: "text.secondary",
+    color: theme.palette.text.secondary,
     mt: "20px",
   },
   buttons: {

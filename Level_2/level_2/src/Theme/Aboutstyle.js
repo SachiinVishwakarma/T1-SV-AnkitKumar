@@ -19,7 +19,7 @@ export const Aboutstyle = (theme) => ({
   infoBox: {
     backgroundColor: "background.default",
     border: `1px solid ${theme.palette.secondary.main}`,
-    borderRadius: "10px",
+    borderRadius: theme.borders.smallborderradius,
     padding: "0px 12px",
   },
   infoText: {

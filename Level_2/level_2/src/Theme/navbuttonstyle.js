@@ -1,6 +1,6 @@
 export const navbuttoncss=(theme)=>({
-        color: "text.secondary",
-        borderColor: "secondary.main",
+        color: theme.palette.text.secondary,
+        borderColor: theme.palette.secondary.main,
         fontSize: theme.typography.fontSize,
         minWidth: theme.button.minWidth,
         fontWeight: theme.typography.fontWeightRegular,

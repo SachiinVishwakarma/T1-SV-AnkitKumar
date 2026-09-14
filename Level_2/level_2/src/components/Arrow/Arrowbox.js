@@ -1,20 +1,8 @@
 import {Box} from "@mui/material"
+import { Arrowboxstyle } from "../../Theme/Arrowboxstyle";
 const Arrowbox=({children})=>{
     return(
-        <Box
-            sx={{
-            width: "55px",
-            height: "55px",
-            borderRadius: "15px",
-            backgroundColor: "#4ECDC4",
-            color: "#FBFBFF",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "16px",
-            fontWeight: 700,
-            }}
-        >
+        <Box sx={Arrowboxstyle}>
             {children}
         </Box>
     )

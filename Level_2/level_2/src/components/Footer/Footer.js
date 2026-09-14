@@ -1,26 +1,24 @@
-import {AppBar,colors,Container,Stack,Toolbar} from "@mui/material"
+import {AppBar,Container,Stack,Toolbar,useTheme} from "@mui/material"
 import Navbutton from "../Button/Navbutton";
 import Colorbutton from "../Button/Colorbutton";
 import Text from "../text/Text";
-const Footer=()=>{return(
+import { Footerstyle } from "../../Theme/Footerstyle";
+const Footer=()=>{
+    const theme = useTheme();
+    const styles = Footerstyle(theme);
+    return(
     <AppBar
             position="static"
             elevation={4}
-            sx={{
-            backgroundColor: "#06286f",
-            mt:"100px",
-            }}
+            sx={styles.footer}
         >
             <Container maxWidth="lg">
             <Toolbar
                 disableGutters
-                sx={{
-                minHeight: "166px !important",
-                justifyContent: "space-between",
-                }}
+                sx={styles.toolbar}
             >
                 
-                <Text txt="© 2023 webTech Practice build for learning and growth" sx={{color:"white",mt:"20px"}}/>
+                <Text txt="© 2023 webTech Practice build for learning and growth" sx={styles.text}/>
 
                 
                 <Stack direction="row" spacing={1.0}>

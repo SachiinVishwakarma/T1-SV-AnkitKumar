@@ -25,6 +25,8 @@ const Theme = createTheme({
   typography: {
     fontFamily: "sans-serif",
     fontSize: 16,
+    fontsizemid: 24,
+    fontsizelarge: 36,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
     fontWeightBold: 700,
@@ -34,6 +36,12 @@ const Theme = createTheme({
     padding: '5px 12px',
     borderRadius: '8px',
     minWidth: '38px',
+  },
+  
+  borders: {
+    smallborderradius: '10px',
+    midborderradius: '15px',
+    largeborderradius: '30px',
   }
 });
 

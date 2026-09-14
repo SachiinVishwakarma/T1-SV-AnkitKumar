@@ -1,22 +1,17 @@
-import {Card,CardContent} from "@mui/material";
+import {Card,CardContent,useTheme} from "@mui/material";
 import Servicesheading from "./Servicesheading";
 import Text from "../text/Text";
+import { Servicesstyle } from "../../Theme/Servicesstyle";
 const Servicesbox=()=>{
+  const theme = useTheme();
+  const styles = Servicesstyle(theme);
     return(
         <Card
                   elevation={0}
-                  sx={{
-                    height: "163px",
-                    width: "400px",
-                    border: "1px solid #35cfc2",
-                    borderRadius: "30px",
-                    backgroundColor: "#ffffff",
-                  }}
+                  sx={styles.box}
                 >
                   <CardContent
-                    sx={{
-                      padding: "14px !important",
-                    }}
+                    sx={styles.cardContent}
                   >
                     <Servicesheading/>
 

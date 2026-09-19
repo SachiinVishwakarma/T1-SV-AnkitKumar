@@ -1,12 +1,12 @@
-import { TextField,Typography } from "@mui/material"
-const Input=(props)=>{return(
+import { TextField,Typography,useTheme } from "@mui/material";
+import { Inputstyle } from "../../Theme/Inputstyle";
+const Input=(props)=>{
+  const theme = useTheme();
+  const styles = Inputstyle(theme);
+  return(
     <>
     <Typography
-        sx={(theme)=>({
-        fontSize: theme.typography.fontSize,
-        fontWeight: theme.typography.fontWeightBold,
-        mb: "3px",
-      })}
+        sx={styles.label}
     >
       {props.label}
     </Typography>
@@ -15,18 +15,7 @@ const Input=(props)=>{return(
       fullWidth
       size="small"
       placeholder={props.placeholder}
-      sx={(theme)=>({
-        "& .MuiInputBase-input": {
-          fontSize: theme.typography.fontSize,
-          padding: "9px",
-        },
-        "& .MuiOutlinedInput-root": {
-          borderRadius: theme.borders.midborderradius,
-          "& fieldset": {
-            borderColor: theme.palette.secondary.main,
-          },
-        },
-      })}
+      sx={styles.input}
     />
     </>
 )}

@@ -1,27 +1,19 @@
-import { FormControlLabel,Checkbox } from "@mui/material";
+import { FormControlLabel,Checkbox,useTheme} from "@mui/material";
+import { Checkstyle } from "../../Theme/Checkstyle";
 
-const Check=(props)=>{return(
+const Check=(props)=>{
+  const theme = useTheme();
+  const styles = Checkstyle(theme);
+  return(
     <FormControlLabel
       control={
         <Checkbox
           size="small"
-          sx={(theme)=>({
-            padding: "0px",
-            mr: "2px",
-            color: theme.palette.secondary.main,
-            "&.Mui-checked": {
-              color: theme.palette.secondary.main,
-            },
-          })}
+          sx={styles.checkbox}
         />
       }
       label={props.label}
-      sx={(theme)=>({
-        mt: "10px",
-        "& .MuiFormControlLabel-label": {
-          fontSize: theme.typography.fontSize,
-        },
-      })}
+      sx={styles.label}
     />
 )}
 export default Check;

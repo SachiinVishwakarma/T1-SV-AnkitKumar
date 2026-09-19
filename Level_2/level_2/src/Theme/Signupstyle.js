@@ -12,7 +12,7 @@ export const Signupstyle = (theme) => ({
     padding: "24px",
     borderRadius: theme.borders.largeborderradius,
     borderTop: `3px solid ${theme.palette.secondary.main}`,
-    backgroundColor: "#FBFBFF",
+    backgroundColor: theme.palette.background.default,
   },
 
   row: {

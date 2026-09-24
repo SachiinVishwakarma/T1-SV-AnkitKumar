@@ -14,11 +14,11 @@ const Signup = () => {
         elevation={0}
         sx={styles.paper}
       >
-        <Subheading txt="Create your account"/>
+        <Subheading txt="Create your account" sx={styles.subheading}/>
 
         <Text txt="Sign up to access the practice dashboard."/>
 
-        <Stack direction="row" spacing={1}>
+        <Stack direction="row" spacing={1.5} sx={styles.nameRow}>
           <Box sx={styles.halfBox}>
             <Input label="First Name:" placeholder="Enter your First name"/>
           </Box>
@@ -28,7 +28,12 @@ const Signup = () => {
           </Box>
         </Stack>
 
-        <Input label="Email:" placeholder="Enter your Email"/>
+        <Box sx={styles.email}>
+          <Input
+            label="Email Address:"
+            placeholder="Enter your email address"
+          />
+        </Box>
 
         <Stack direction="row" spacing={1} sx={styles.row}>
           <Box sx={styles.halfBox}>
@@ -40,14 +45,16 @@ const Signup = () => {
           </Box>
         </Stack>
 
-        <Text txt="Use at least 8 characters, with"/>
-        <Text txt="letters & numbers"/>
+        <Box sx={styles.passwordText}>
+        <Text txt="Use at least 8 characters, with" sx={styles.smallText}/>
+        <Text txt="letters & numbers" sx={styles.smallText}/>
+        </Box>
 
         <Stack>
           <Check label="I agree to the terms"/>
         </Stack>
 
-        <Colorbutton txt="Create Account"/>
+        <Colorbutton txt="Create Account" fullWidth sx={styles.button}/>
 
         <Typography
           sx={styles.terms}

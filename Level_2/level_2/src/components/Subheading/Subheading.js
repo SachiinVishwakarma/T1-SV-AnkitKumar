@@ -9,6 +9,7 @@ const Subheading=(props)=>{
               mb: 5,
               display: "flex",
               justifyContent: "center",
+              ...props.sx,
             }}
           >
             {props.txt}

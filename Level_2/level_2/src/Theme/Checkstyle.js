@@ -10,7 +10,9 @@ export const Checkstyle = (theme) => ({
   },
 
   label: {
-    mt: "10px",
+    mt: "0px",
+    mb: "20px",
+    ml: "2px",
 
     "& .MuiFormControlLabel-label": {
       fontSize: theme.typography.fontSize,

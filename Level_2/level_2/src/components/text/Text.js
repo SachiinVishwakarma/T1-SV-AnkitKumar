@@ -4,7 +4,7 @@ const Text=(props)=>{
         <Typography
             sx={{
             fontSize: "16px",
-            lineHeight: 1.7,
+            lineHeight: 1.5,
             color: "black",
             mb: 2,
             ...props.sx,

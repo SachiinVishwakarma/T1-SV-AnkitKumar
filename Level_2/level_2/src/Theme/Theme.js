@@ -14,6 +14,7 @@ const Theme = createTheme({
 
     background: {
       default: "#ffffff",
+      sec: "#f1f3f4"
     },
 
     text: {
@@ -24,6 +25,7 @@ const Theme = createTheme({
 
   typography: {
     fontFamily: "sans-serif",
+    xs: 13,
     fontSize: 16,
     fontsizemid: 24,
     fontsizelarge: 36,

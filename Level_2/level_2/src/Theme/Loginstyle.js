@@ -1,7 +1,7 @@
 export const Loginstyle = (theme) => ({
   page: {
     minHeight: "100vh",
-    backgroundColor: "#eef3f8",
+    backgroundColor: theme.palette.background.sec,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -14,7 +14,7 @@ export const Loginstyle = (theme) => ({
     padding: "34px 36px",
     borderRadius: theme.borders.largeborderradius,
     borderTop: `3px solid ${theme.palette.secondary.main}`,
-    backgroundColor: "#ffffff",
+    backgroundColor: theme.palette.background.default,
     boxSizing: "border-box",
   },
 

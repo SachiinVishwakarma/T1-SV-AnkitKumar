@@ -1,0 +1,57 @@
+export const Sidebarstyle=(theme)=>({
+  sidebar:{
+    width:"21%",
+    minHeight:"100vh",
+    backgroundColor:theme.palette.background.default,
+    borderRight:`1px solid ${theme.palette.secondary.main}`,
+    display:"flex",
+    flexDirection:"column",
+    justifyContent:"space-between",
+    p:1.5,
+    boxSizing:"border-box"
+  },
+  profile:{
+    mb:"20px"
+  },
+  profilepic:{
+    width:50,
+    height:50,
+    borderRadius:theme.borders.midborderradius,
+    backgroundColor:theme.palette.primary.main,
+    color:theme.palette.text.secondary,
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center"
+  },
+  username:{
+    fontSize:theme.typography.fontSize,
+    fontWeight:theme.typography.fontWeightBold
+  },
+  email:{
+    fontSize:theme.typography.xs
+  },
+  heading:{
+    fontSize:theme.typography.fontSize,
+    fontWeight:theme.typography.fontWeightMedium
+  },
+  active:{
+    p:0.7,
+    pl:2,
+    border:`1px solid ${theme.palette.secondary.main}`,
+    boxShadow:`-2px 0px ${theme.palette.secondary.main}`,
+    borderRadius:theme.borders.midborderradius,
+    backgroundColor:theme.palette.background.sec
+  },
+  item:{
+    fontSize:theme.typography.fontSize,
+    fontWeight:theme.typography.fontWeightRegular,
+    pl:2
+  },
+  quickItem:{
+    fontSize:theme.typography.fontSize,
+    fontWeight:theme.typography.fontWeightRegular,
+    pl:2,
+    display:"block",
+    mt:1
+  }
+});

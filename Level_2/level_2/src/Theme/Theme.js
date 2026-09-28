@@ -27,6 +27,7 @@ const Theme = createTheme({
     fontFamily: "sans-serif",
     xs: 13,
     fontSize: 16,
+    fs:20,
     fontsizemid: 24,
     fontsizelarge: 36,
     fontWeightRegular: 400,

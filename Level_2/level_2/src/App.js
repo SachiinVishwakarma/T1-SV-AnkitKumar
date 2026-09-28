@@ -2,7 +2,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Landing_page from "./pages/Landing";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Dashboard from "./pages/Dashboard";
 function App() {
 
   return (
@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<Landing_page/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/sidebar" element={<Sidebar/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
       </BrowserRouter>
   );

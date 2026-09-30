@@ -1,7 +1,7 @@
 export const Inputstyle = (theme) => ({
   label: {
     fontSize: theme.typography.fontSize,
-    fontWeight: theme.typography.fontWeightBold,
+    fontWeight: theme.typography.fontWeightMedium,
     mb: "6px",
   },
 

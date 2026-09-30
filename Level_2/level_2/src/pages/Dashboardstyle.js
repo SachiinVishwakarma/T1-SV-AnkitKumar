@@ -15,7 +15,8 @@ export const Dashboardstyle=(theme)=>({
     color:theme.palette.text.secondary,
     display:"flex",
     alignItems:"center",
-    px:2
+    paddingLeft:2,
+    paddingRight:2,
   },
 
   heading:{
@@ -28,12 +29,12 @@ export const Dashboardstyle=(theme)=>({
   },
 
   content:{
-    p:3
+    padding:3
   },
 
   paper:{
-    p:4,
-    pl:5,
+    padding:4,
+    paddingLeft:5,
     border:`1px solid ${theme.palette.secondary.main}`,
     borderRadius:theme.borders.largeborderradius,
     boxShadow:`inset 0px 4px 4px ${theme.palette.secondary.main}`
@@ -52,7 +53,7 @@ export const Dashboardstyle=(theme)=>({
   card:{
     flex:1,
     width:200,
-    p:2.5,
+    padding:2.5,
     border:`1px solid ${theme.palette.secondary.main}`,
     borderRadius:theme.borders.midborderradius,
     backgroundColor:theme.palette.background.sec
@@ -87,7 +88,7 @@ export const Dashboardstyle=(theme)=>({
 
   action:{
     flex:1,
-    p:2.5,
+    padding:2.5,
     textAlign:"center",
     border:`1px solid ${theme.palette.secondary.main}`,
     borderRadius:theme.borders.midborderradius,

@@ -1,5 +1,5 @@
-export const Dashboardstyle=(theme)=>({
-  dashboard:{
+export const Securitystyle=(theme)=>({
+    dashboard:{
     display:"flex",
     minHeight:"100vh"
   },
@@ -24,12 +24,29 @@ export const Dashboardstyle=(theme)=>({
     fontWeight:theme.typography.fontWeightBold
   },
 
-  text:{
-    fontWeight:theme.typography.fontWeightRegular
+  halfbox:{
+    width:'50%',
   },
 
   content:{
     padding:3
+  },
+
+  contenthead:{
+    fontSize:theme.typography.fs,
+    fontWeight:theme.typography.fontWeightBold,
+    mb:2.5,
+  },
+
+  contentsubhead:{
+    fontSize:theme.typography.fontSize,
+    fontWeight:theme.typography.fontWeightBold,
+    mb:2,
+  },
+
+  text:{
+    fontWeight:theme.typography.fontWeightRegular,
+    mb: 4,
   },
 
   paper:{
@@ -40,10 +57,15 @@ export const Dashboardstyle=(theme)=>({
     boxShadow:`inset 0px 4px 4px ${theme.palette.secondary.main}`
   },
 
-  welcome:{
-    fontSize:theme.typography.fs,
-    fontWeight:theme.typography.fontWeightBold,
-    mb:1
+  row:{
+    mb: 2.5,
+  },
+
+  save:{
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
   },
 
   cards:{
@@ -61,7 +83,7 @@ export const Dashboardstyle=(theme)=>({
 
   cardtitle:{
     fontSize:theme.typography.fontSize,
-    fontWeight:theme.typography.fontWeightMedium
+    fontWeight:theme.typography.fontWeightBold,
   },
 
   cardtext:{
@@ -77,33 +99,4 @@ export const Dashboardstyle=(theme)=>({
     borderRadius:theme.borders.midborderradius,
     mt:2
   },
-
-  quicktitle:{
-    display:"block",
-    fontSize:theme.typography.fontSize,
-    fontWeight:theme.typography.fontWeightBold,
-    mt:5,
-    mb:2
-  },
-
-  action:{
-    flex:1,
-    padding:2.5,
-    textAlign:"center",
-    border:`1px solid ${theme.palette.secondary.main}`,
-    borderRadius:theme.borders.midborderradius,
-    backgroundColor:theme.palette.background.sec
-  },
-
-  actiontitle:{
-    fontSize:theme.typography.fontSize,
-    fontWeight:theme.typography.fontWeightMedium
-  },
-
-  actiontext:{
-    fontSize:theme.typography.xs,
-    fontWeight:theme.typography.fontWeightRegular,
-    display:"block",
-    mt:1
-  }
-});
+})

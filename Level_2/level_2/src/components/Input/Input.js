@@ -15,6 +15,8 @@ const Input=(props)=>{
       fullWidth
       size="small"
       placeholder={props.placeholder}
+      type={props.type}
+      value={props.value}
       sx={styles.input}
     />
     </>

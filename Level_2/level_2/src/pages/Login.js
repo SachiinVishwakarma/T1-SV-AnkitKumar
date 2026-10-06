@@ -5,11 +5,12 @@ import Subheading from "../components/Subheading/Subheading";
 import Check from "../components/Checkbox/Check";
 import Colorbutton from "../components/Button/Colorbutton";
 import { Loginstyle } from "../Theme/Loginstyle";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const theme = useTheme();
   const styles = Loginstyle(theme);
-
+  const navigate = useNavigate();
   return (
     <Box sx={styles.page}>
       <Box sx={styles.card}>
@@ -63,7 +64,7 @@ const Login = () => {
 
         <Typography sx={styles.signupText}>
           New to WebTech Practice?{" "}
-          <Box component="span" sx={styles.signup}>
+          <Box component="span" sx={styles.signup} onClick={navigate("/signup")}>
             Create an account
           </Box>
         </Typography>

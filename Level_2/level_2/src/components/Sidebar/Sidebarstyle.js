@@ -53,5 +53,11 @@ export const Sidebarstyle=(theme)=>({
     pl:2,
     display:"block",
     mt:1
-  }
+  },
+
+  sidebarLink: {
+        textDecoration: "none",
+        color: "inherit",
+        display: "block",
+    },
 });

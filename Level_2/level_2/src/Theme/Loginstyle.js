@@ -20,27 +20,27 @@ export const Loginstyle = (theme) => ({
 
   subheading: {
     justifyContent: "flex-start",
-    mb: "4px",
+    marginBottom: "4px",
   },
 
   text: {
-    mb: "25px",
+    marginBottom: "25px",
   },
 
   input: {
-    mb: "25px",
+    marginBottom: "25px",
   },
 
   helpText: {
     fontSize: theme.typography.xs,
-    mb: "25px",
-    mt: "-15px",
+    marginBottom: "25px",
+    marginTop: "-15px",
   },
 
   options: {
     justifyContent: "space-between",
     alignItems: "center",
-    mb: "20px",
+    marginBottom: "20px",
   },
 
   forgot: {
@@ -49,15 +49,10 @@ export const Loginstyle = (theme) => ({
     cursor: "pointer",
   },
 
-  button: {
-    padding: "10px",
-    mb: "15px",
-  },
-
   signupText: {
     fontSize: theme.typography.xs,
-    mt: "18px",
-    mb: "0px",
+    marginTop: "18px",
+    marginBottom: "0px",
   },
 
   signup: {

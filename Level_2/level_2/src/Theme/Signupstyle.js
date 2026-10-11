@@ -5,23 +5,23 @@ export const Signupstyle = (theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    padding: "20px",
   },
 
   paper: {
-    width: "100%",
     maxWidth: "510px",
-    padding: "20px",
+    padding: "34px 36px",
     borderRadius: theme.borders.largeborderradius,
     borderTop: `3px solid ${theme.palette.secondary.main}`,
     backgroundColor: theme.palette.background.default,
   },
 
   row: {
-    mt: "25px",
+    marginTop: "10px",
   },
 
   nameRow: {
-  mt: "8px",
+  marginTop: "8px",
   },
 
   halfBox: {
@@ -29,8 +29,8 @@ export const Signupstyle = (theme) => ({
   },
 
   terms: {
-    fontSize: theme.typography.fontSize,
-    mt: "18px",
+    fontSize: theme.typography.xs,
+    marginTop: "0px",
   },
 
   signin: {
@@ -39,34 +39,27 @@ export const Signupstyle = (theme) => ({
   },
 
   email: {
-  mt: "25px",
+  marginTop: "10px",
   },
 
   passwordText: {
-  mt: "10px",
-  mb: "15px",
+  marginTop: "10px",
+  marginBottom: "10px",
   },
 
   smallText: {
     fontSize: theme.typography.xs,
     lineHeight: "1.2",
-    mb: "0px",
+    marginBottom: "0px",
   },
 
   check: {
-  mt: "20px",
-  mb: "25px",
+  marginTop: "20px",
+  marginBottom: "10px",
   },
 
   subheading: {
   justifyContent: "flex-start",
-  mb: "4px",
-  },
-
-  button: {
-  width: "100%",
-  padding: "10px",
-  mt: "0px",
-  mb: "10px",
+  marginBottom: "4px",
   },
 });

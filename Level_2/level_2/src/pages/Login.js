@@ -46,7 +46,7 @@ const Login = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      window.location.href = "/side/dashboard";
+      window.location.href = "/overview";
     }
   };
   return (

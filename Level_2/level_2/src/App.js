@@ -5,6 +5,9 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Security from "./pages/Security";
+import Notification from "./pages/Notification";
+import Help from "./pages/Help";
+import Sidebar from "./components/Sidebar/Sidebar";
 function App() {
 
   return (
@@ -13,9 +16,13 @@ function App() {
           <Route path="/" element={<Landing_page/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/dashboard" element={<Dashboard/>}/>
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/Security" element={<Security/>}/>
+          <Route path="/dashboard" element={<Sidebar/>}>
+            <Route path="overview" element={<Dashboard/>}/>
+            <Route path="profile" element={<Profile/>}/>
+            <Route path="Security" element={<Security/>}/>
+            <Route path="notification" element={<Notification/>}/>
+            <Route path="Help" element={<Help/>}/> 
+          </Route>
         </Routes>
       </BrowserRouter>
   );

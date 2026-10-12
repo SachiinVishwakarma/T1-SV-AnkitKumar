@@ -1,6 +1,6 @@
 import {Box,Typography,Stack,Paper,useTheme} from "@mui/material";
 import Text from "../components/text/Text";
-import { Dashboardstyle } from "./Dashboardstyle";
+import { Dashboardstyle } from "../Theme/Dashboardstyle";
 
 const Dashboard=()=>{
     const theme=useTheme();

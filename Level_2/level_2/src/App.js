@@ -16,12 +16,12 @@ function App() {
           <Route path="/" element={<Landing_page/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route element={<Sidebar/>}>
-            <Route path="dashboard"element={<Dashboard/>}/>
+          <Route path="/dashboard" element={<Sidebar/>}>
+            <Route path="overview" element={<Dashboard/>}/>
             <Route path="profile" element={<Profile/>}/>
             <Route path="Security" element={<Security/>}/>
             <Route path="notification" element={<Notification/>}/>
-            <Route path="Help" element={<Help/>}/>
+            <Route path="Help" element={<Help/>}/> 
           </Route>
         </Routes>
       </BrowserRouter>

@@ -49,14 +49,14 @@ export const Sidebarstyle=(theme)=>({
   item:{
     fontSize:theme.typography.fontSize,
     fontWeight:theme.typography.fontWeightRegular,
-    pl:2
+    paddingLeft:2
   },
   quickItem:{
     fontSize:theme.typography.fontSize,
     fontWeight:theme.typography.fontWeightRegular,
-    pl:2,
+    paddingLeft:2,
     display:"block",
-    mt:1
+    marginTop:1
   },
 
   sidebarLink: {

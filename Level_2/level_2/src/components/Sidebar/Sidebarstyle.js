@@ -1,14 +1,18 @@
 export const Sidebarstyle=(theme)=>({
   sidebar:{
     width:"21%",
-    minHeight:"100vh",
+    height:"100vh",
     backgroundColor:theme.palette.background.default,
     borderRight:`1px solid ${theme.palette.secondary.main}`,
     display:"flex",
     flexDirection:"column",
     justifyContent:"space-between",
-    p:1.5,
-    boxSizing:"border-box"
+    boxSizing:"border-box",
+    padding: "24px 16px",
+    position: "sticky",
+    top: 0,
+    alignSelf: "flex-start",
+    overflowY: "auto",
   },
   profile:{
     mb:"20px"
@@ -35,11 +39,11 @@ export const Sidebarstyle=(theme)=>({
     fontWeight:theme.typography.fontWeightMedium
   },
   active:{
-    p:0.7,
-    pl:2,
+    padding:'5px',
+    paddingLeft:2,
     border:`1px solid ${theme.palette.secondary.main}`,
-    boxShadow:`-2px 0px ${theme.palette.secondary.main}`,
-    borderRadius:theme.borders.midborderradius,
+    boxShadow:`-4px 0px ${theme.palette.secondary.main}`,
+    borderRadius:theme.borders.smallborderradius,
     backgroundColor:theme.palette.background.sec
   },
   item:{
@@ -60,4 +64,34 @@ export const Sidebarstyle=(theme)=>({
         color: "inherit",
         display: "block",
     },
+
+  dashboard:{
+    display:"flex",
+    minHeight:"100vh"
+  },
+
+  main:{
+    width:"79%",
+    minWidth:0,
+    backgroundColor:theme.palette.background.sec
+  },
+
+  header:{
+    height:70,
+    minHeight:70,
+    position:"sticky",
+    top:0,
+    zIndex:10,
+    backgroundColor:theme.palette.primary.main,
+    color:theme.palette.text.secondary,
+    display:"flex",
+    alignItems:"center",
+    paddingLeft:2,
+    paddingRight:2,
+  },
+
+  heading1:{
+    fontSize:theme.typography.fontSize,
+    fontWeight:theme.typography.fontWeightBold
+  },
 });

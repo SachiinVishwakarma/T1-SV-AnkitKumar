@@ -1,5 +1,4 @@
 import {Box,Typography,Stack,Paper,useTheme} from "@mui/material";
-import Sidebar from "../components/Sidebar/Sidebar";
 import Text from "../components/text/Text";
 import { Dashboardstyle } from "./Dashboardstyle";
 
@@ -7,16 +6,7 @@ const Dashboard=()=>{
     const theme=useTheme();
     const styles=Dashboardstyle(theme);
   return(
-    <Box sx={styles.dashboard}>
-      <Sidebar/>
-
-      <Box sx={styles.main}>
-        <Box sx={styles.header}>
-          <Typography variant="caption" sx={styles.heading}>
-            WebTech Practice Dashboard
-          </Typography>
-        </Box>
-
+    <>
         <Box sx={styles.content}>
           <Paper sx={styles.paper}>
             <Typography sx={styles.welcome}>
@@ -79,8 +69,7 @@ const Dashboard=()=>{
             </Stack>
           </Paper>
         </Box>
-      </Box>
-    </Box>
+        </>
   );
 };
 

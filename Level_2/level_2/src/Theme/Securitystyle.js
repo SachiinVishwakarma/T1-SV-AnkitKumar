@@ -35,18 +35,18 @@ export const Securitystyle=(theme)=>({
   contenthead:{
     fontSize:theme.typography.fs,
     fontWeight:theme.typography.fontWeightBold,
-    mb:2.5,
+    marginBottom:2.5,
   },
 
   contentsubhead:{
     fontSize:theme.typography.fontSize,
     fontWeight:theme.typography.fontWeightBold,
-    mb:2,
+    marginBottom:2,
   },
 
   text:{
     fontWeight:theme.typography.fontWeightRegular,
-    mb: 4,
+    marginBottom: 4,
   },
 
   paper:{
@@ -58,18 +58,11 @@ export const Securitystyle=(theme)=>({
   },
 
   row:{
-    mb: 2.5,
-  },
-
-  save:{
-    paddingTop: "10px",
-    paddingBottom: "10px",
-    paddingLeft: "30px",
-    paddingRight: "30px",
+    marginBottom: 2.5,
   },
 
   cards:{
-    mt:3
+    marginTop:3
   },
 
   card:{
@@ -90,13 +83,13 @@ export const Securitystyle=(theme)=>({
     fontSize:theme.typography.xs,
     fontWeight:theme.typography.fontWeightRegular,
     display:"block",
-    mt:1
+    marginTop:1
   },
 
   bar:{
     height:6,
     backgroundColor:theme.palette.primary.main,
     borderRadius:theme.borders.midborderradius,
-    mt:2
+    marginTop:2
   },
 })

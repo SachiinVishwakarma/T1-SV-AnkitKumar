@@ -1,7 +1,7 @@
 export const Checkstyle = (theme) => ({
   checkbox: {
     padding: "0px",
-    mr: "2px",
+    marginRight: "2px",
     color: theme.palette.secondary.main,
 
     "&.Mui-checked": {
@@ -10,9 +10,9 @@ export const Checkstyle = (theme) => ({
   },
 
   label: {
-    mt: "0px",
-    mb: "20px",
-    ml: "2px",
+    marginTop: "0px",
+    marginBottom: "20px",
+    marginLeft: "2px",
 
     "& .MuiFormControlLabel-label": {
       fontSize: theme.typography.fontSize,

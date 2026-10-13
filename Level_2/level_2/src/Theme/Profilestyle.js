@@ -35,13 +35,13 @@ export const Profilestyle=(theme)=>({
   contenthead:{
     fontSize:theme.typography.fs,
     fontWeight:theme.typography.fontWeightBold,
-    mb:2.5,
+    marginBottom:2.5,
   },
 
   contentsubhead:{
     fontSize:theme.typography.fontSize,
     fontWeight:theme.typography.fontWeightBold,
-    mb:2,
+    marginBottom:2,
   },
 
   paper:{
@@ -53,13 +53,6 @@ export const Profilestyle=(theme)=>({
   },
 
   row:{
-    mb: 2.5,
-  },
-
-  save:{
-    paddingTop: "10px",
-    paddingBottom: "10px",
-    paddingLeft: "30px",
-    paddingRight: "30px",
+    marginBottom: 2.5,
   },
 })

@@ -35,7 +35,7 @@ const Sidebar=()=>{
         <Typography variant="caption" sx={styles.heading}>DASHBOARD</Typography>
 
         <Stack spacing={2} sx={{mb:3}}>
-            <Box component={NavLink} to="dashboard" sx={styles.sidebarLink} style={activeBorder}>
+            <Box component={NavLink} to="overview" sx={styles.sidebarLink} style={activeBorder}>
               <Typography variant="caption" sx={styles.item}>Overview</Typography>
             </Box>
 

@@ -1,8 +1,8 @@
 export const Herostyle = (theme) => ({
 
   grid: {
-    mb: 5,
-    mt: 10,
+    marginBottom: 5,
+    marginTop: 10,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -12,8 +12,8 @@ export const Herostyle = (theme) => ({
     fontWeight: theme.typography.fontWeightBold,
     lineHeight: 1.15,
     color: theme.palette.text.primary,
-    mt: 10,
-    mb: 2,
+    marginTop: 10,
+    marginBottom: 2,
   },
 
   description: {
@@ -21,7 +21,7 @@ export const Herostyle = (theme) => ({
   },
 
   buttonStack: {
-    mt: 3,
+    marginTop: 3,
   },
 
   card: {
@@ -52,7 +52,7 @@ export const Herostyle = (theme) => ({
     fontSize: theme.typography.fontsizemid,
     fontWeight: theme.typography.fontWeightBold,
     color: theme.palette.text.primary,
-    mb: 0.8,
+    marginBottom: 0.8,
   },
 
   cardDescription: {

@@ -5,7 +5,7 @@ export const Servicesstyle = (theme) => ({
     justifySelf: "center",
   },
   stack: {
-    mb: "10px",
+    marginBottom: "10px",
   },
   box: {
     height: "163px",
@@ -21,7 +21,7 @@ export const Servicesstyle = (theme) => ({
     fontSize: theme.typography.fontSize,
     fontWeight: theme.typography.fontWeightBold,
     color: theme.palette.text.primary,
-    mb: 0.8,
+    marginBottom: 0.8,
     textAlign: "center",
   },
 });

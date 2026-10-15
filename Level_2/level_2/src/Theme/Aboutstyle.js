@@ -1,20 +1,20 @@
 export const Aboutstyle = (theme) => ({
   about: {
     textAlign: "center",
-    mb: 10,
+    marginBottom: 10,
   },
   description: {
     maxWidth: "738px",
     display: "flex",
     justifySelf: "center",
-    mb: 4,
-    mt: 2,
+    marginBottom: 4,
+    marginTop: 2,
   },
   infoStack: {
     width: "738px",
     height: "60px",
     mx: "auto",
-    mb: 1,
+    marginBottom: 1,
   },
   infoBox: {
     backgroundColor: "background.default",
@@ -26,6 +26,6 @@ export const Aboutstyle = (theme) => ({
     maxWidth: "738px",
     display: "flex",
     justifySelf: "center",
-    mt: 2,
+    marginTop: 2,
   },
 });

@@ -2,7 +2,7 @@ export const Inputstyle = (theme) => ({
   label: {
     fontSize: theme.typography.fontSize,
     fontWeight: theme.typography.fontWeightMedium,
-    mb: "6px",
+    marginBottom: "6px",
   },
 
   input: {

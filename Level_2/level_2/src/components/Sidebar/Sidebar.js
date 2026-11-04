@@ -59,7 +59,7 @@ const Sidebar=()=>{
 
       <Box>
         <Typography variant="caption" sx={styles.heading}>ACCOUNT</Typography>
-        <Typography variant="caption" sx={styles.quickItem}>
+        <Typography variant="caption" sx={styles.quickItem} onClick={() => { localStorage.removeItem("current user"); window.location.href = "/"}}>
           Sign out
         </Typography>
       </Box>

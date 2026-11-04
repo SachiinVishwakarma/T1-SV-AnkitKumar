@@ -31,7 +31,7 @@ const Footer=()=>{
 
                 <Navbutton txt="Login"/>
 
-                <Colorbutton txt="Signup"/>
+                <Colorbutton txt="Signup" size="small"/>
 
                 
                 </Stack>

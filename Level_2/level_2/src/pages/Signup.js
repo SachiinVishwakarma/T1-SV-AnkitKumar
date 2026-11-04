@@ -2,7 +2,7 @@ import {Box,Typography,Paper,Stack,useTheme} from "@mui/material";
 import Input from "../components/Input/Input";
 import Text from "../components/text/Text";
 import Subheading from "../components/Subheading/Subheading";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Check from "../components/Checkbox/Check";
 import Colorbutton from "../components/Button/Colorbutton";
 import { Signupstyle } from "../Theme/Signupstyle";
@@ -10,6 +10,7 @@ import { useState } from "react";
 const Signup = () => {
   const theme = useTheme();
   const styles = Signupstyle(theme);
+  const navigate = useNavigate();
 
   const [form, setForm] = useState({
     firstName: "",
@@ -45,12 +46,11 @@ const Signup = () => {
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
-      newErrors.email = "Enter valid email";
+      newErrors.email = "Enter valid email.";
     }
 
     if (!/^(?=.*[A-Za-z])(?=.*\d).{8,}$/.test(form.password)) {
-      newErrors.password =
-      "Enter valid pasword.";
+      newErrors.password = "Enter valid password.";
     }
 
     if (form.confirmPassword !== form.password || !form.confirmPassword) {
@@ -61,12 +61,32 @@ const Signup = () => {
       newErrors.terms = "Please agree the terms.";
     }
 
-    setErrors(newErrors);
-
     if (Object.keys(newErrors).length === 0) {
-      alert("Account created successfuly");
-      window.location.href = "/login";
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    const existingUser = users.find(
+      (user) =>
+        user.Email.toLowerCase() === form.email.trim().toLowerCase()
+    );
+
+    if (existingUser) {
+      newErrors.email = "This email is already registered.";
+    } else {
+      const newUser = {
+        Name: form.firstName.trim(),
+        Lastname: form.lastName.trim(),
+        Email: form.email.trim(),
+        Password: form.password,
+      };
+      users.push(newUser);
+      localStorage.setItem("users", JSON.stringify(users));
+
+      alert("Account created successfully.");
+      navigate("/login");
     }
+}
+
+setErrors(newErrors);
   };
 
   return (

@@ -9,6 +9,9 @@ const Check=(props)=>{
       control={
         <Checkbox
           size="small"
+          name={props.name}
+          checked={props.checked}
+          onChange={props.onChange}
           sx={styles.checkbox}
         />
       }

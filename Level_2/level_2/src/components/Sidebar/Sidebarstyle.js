@@ -56,7 +56,7 @@ export const Sidebarstyle=(theme)=>({
     fontWeight:theme.typography.fontWeightRegular,
     paddingLeft:2,
     display:"block",
-    marginTop:1
+    cursor:"pointer",
   },
 
   sidebarLink: {

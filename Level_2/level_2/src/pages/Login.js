@@ -5,12 +5,13 @@ import Subheading from "../components/Subheading/Subheading";
 import Check from "../components/Checkbox/Check";
 import Colorbutton from "../components/Button/Colorbutton";
 import { Loginstyle } from "../Theme/Loginstyle";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Login = () => {
   const theme = useTheme();
   const styles = Loginstyle(theme);
+  const navigate = useNavigate();
 
   const [form, setForm] = useState({
     email: "",
@@ -38,16 +39,25 @@ const Login = () => {
       newErrors.email = "Enter valid email address.";
     }
 
-    if (!/^(?=.*[A-Za-z])(?=.*\d).{8,}$/.test(form.password)) {
-      newErrors.password =
-      "Enter valid pasword.";
+    if (!form.password) {
+      newErrors.password = "Enter your password.";
     }
-
-    setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      window.location.href = "/dashboard/overview";
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+      const user = users.find(
+        (user) =>
+          user.Email.toLowerCase() === form.email.trim().toLowerCase() &&
+          user.Password === form.password
+      );
+      if (user) {
+        localStorage.setItem("current user", JSON.stringify(user));
+        navigate("/dashboard/overview");
+      } else {
+        newErrors.general = "Invalid email or password.";
+      }
     }
+    setErrors(newErrors);
   };
   return (
     <Box sx={styles.page}>
@@ -92,6 +102,11 @@ const Login = () => {
               {errors.password}
             </Typography>
           )}
+          {errors.general && (
+            <Typography color="error" variant="body2">
+              {errors.general}
+            </Typography>
+          )}
         </Box>
 
         <Text
@@ -122,7 +137,8 @@ const Login = () => {
 
         <Typography sx={styles.signupText}>
           New to WebTech Practice?{" "}
-          <Link to="/signup">
+          <Link to="/signup"
+          style={styles.signup}>
             Create an account
           </Link>
         </Typography>

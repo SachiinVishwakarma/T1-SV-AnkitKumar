@@ -14,8 +14,10 @@ const Input=(props)=>{
     <TextField
       fullWidth
       size="small"
+      name={props.name}
       placeholder={props.placeholder}
-      type={props.type}
+      type={props.type || "text"}
+      onChange={props.onChange}
       value={props.value}
       sx={styles.input}
     />

@@ -1,8 +1,13 @@
 import {AppBar,Container,Typography,Stack,Toolbar,} from "@mui/material";
 import Navbutton from "../Button/Navbutton";
 import Colorbutton from "../Button/Colorbutton";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const click=()=>{
+    navigate("/signup")
+  }
   return (
     <AppBar
       position="static"
@@ -35,7 +40,7 @@ const Navbar = () => {
             <Navbutton txt="Services" />
             <Navbutton txt="Theme" />
             <Navbutton txt="Login" />
-            <Colorbutton txt="Signup" />
+            <Colorbutton txt="Signup" size="small" onclick={click}/>
           </Stack>
         </Toolbar>
       </Container>

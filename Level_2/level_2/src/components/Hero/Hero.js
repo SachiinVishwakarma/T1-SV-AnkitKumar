@@ -33,7 +33,7 @@ const Hero = () => {
           spacing={2}
           sx={styles.buttonStack}
         >
-          <Colorbutton txt="Sign Up" />
+          <Colorbutton txt="Sign Up" size="small"/>
           <Navbutton
             txt="I already have an account"
             sx={styles.navbtn}
